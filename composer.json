@@ -1,0 +1,13 @@
+{
+    "name": "jelckama/liturgical",
+    "description": "To calculate liturgical year, color, etc., for mainly PHP-available web servers",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "JELCKamata ICT Team and Haruka Sato",
+            "email": "hal.ict@jelckama.com"
+        }
+    ],
+    "require": {}
+}
