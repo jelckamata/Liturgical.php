@@ -2,6 +2,7 @@
     "name": "jelckama/liturgical",
     "description": "To calculate liturgical year, color, etc., for mainly PHP-available web servers",
     "type": "library",
+    "version": "0.1",
     "license": "MIT",
     "authors": [
         {
@@ -9,5 +10,14 @@
             "email": "hal.ict@jelckama.com"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "JELCKamata\\Liturgical\\": ""
+        }
+    },
+    "require": {
+        "php": ">=8.1"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
