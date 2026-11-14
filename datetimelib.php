@@ -8,7 +8,7 @@ use DateTime, DateTimeZone, DateInterval;
  * Summary of DateTimeGet
  */
 enum DateTimeGet: string {
-    case Year = "y";
+    case Year = "Y";
     case Month = "m";
     case Day = "d";
     case WeekDay = "w";
@@ -83,8 +83,8 @@ function get_sunset(DateTime $ofDate): DateTime {
     /**
  * @var string[][] $res
  */
-    $res = json_decode(file_get_contents("https://api.sunrise-sunset.org/json?lat=35.6809591&lng=139.7673068&formatted=0&tzid={$zone}&date={$year}-{$month}-{$day}"));
-    return new DateTime($res["result"]["sunset"]);
+    $res = json_decode(file_get_contents("https://api.sunrise-sunset.org/json?lat=35.6809591&lng=139.7673068&formatted=0&tzid={$zone}&date={$year}-{$month}-{$day}"), true);
+    return new DateTime($res["results"]["sunset"]);
 
 }
 ?>
